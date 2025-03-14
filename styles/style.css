@@ -1,0 +1,213 @@
+/* General */
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container, .navbar, .hero, .spotify-section, .green-section, .footer {
+    max-width: 1000px;
+    width: 90%; 
+    margin: 0 auto;
+    padding: 50px 40px; 
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 8px;
+}
+
+.nav-links a:hover {
+    color: #1db954;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 35vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 60px; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 22px; 
+    margin: 5px 0;
+}
+
+/* Cards */
+.spotify-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.spotify-section h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 260px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1db954; 
+}
+
+.card p {
+    font-size: 18px;
+    color: gray;
+}
+
+.card img {
+    width: 80px; 
+    margin-bottom: 15px;
+}
+
+/* Green-section */
+.green-section {
+    background-color: #1db954;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 400px;
+    text-align: left;
+    color: white;
+}
+
+.text-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3px;
+}
+
+.text-content strong {
+    font-size: 22px;
+    display: block;
+    margin-top: 15px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.image-content.center {
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+}
+
+.image-content.center img {
+    max-width: 60px; 
+    height: auto;
+}
+
+.image-content.right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-content.right img {
+    max-width: 280px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding: 20px 40px;
+    max-width: 1000px;
+    width: 90%; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
